@@ -1,0 +1,28 @@
+<header>
+  <img src="../../../../assets/images/logo.png" width="50" height="50" alt="test">
+  <h2>Celtiadur</h2>
+
+  <div class="summary">
+    <div class="language"></div>
+    <div class="summary-btn"><a
+      [routerLink]="sessiongame"
+      class="nav-link text-white"
+      [routerLinkActive]="'active'">
+      <i class="fa fa-users"></i>Jeu Gerdarzh</a></div>
+    <div class="summary-btn"><a
+      [routerLink]="wordstems"
+      class="nav-link text-white"
+      [routerLinkActive]="'active'">Lexique</a></div>
+    <div class="summary-btn"><a
+      [routerLink]="sources"
+      class="nav-link text-white"
+      [routerLinkActive]="'active'">Sources</a></div>
+    <div class="summary-btn"><a href="/userprofile">Mon profile</a></div>
+    <div class="summary-btn"><a href="/leaderboard">Classement</a></div>
+    <div class="summary-btn">
+      <a href="/login?logout">
+        <button class="classic-btn">Se déconnecter</button>
+      </a>
+    </div>
+  </div>
+</header>
