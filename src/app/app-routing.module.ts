@@ -4,6 +4,7 @@ import { HomeContentComponent } from './views/home-content/home-content.componen
 import { SessionGameComponent } from './views/session-game/session-game.component';
 import { WordstemsComponent } from './views/wordstems/wordstems.component';
 
+
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full',
 },
