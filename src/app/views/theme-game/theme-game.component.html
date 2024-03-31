@@ -1,0 +1,13 @@
+<h2>Choisissez le thème du quizz:</h2>
+
+<div class="answersForm">
+    <button class="btn" (click)="setWordtheme('1')">Lieux et pays</button>
+    <button class="btn" (click)="setWordtheme('2')">Figures historiques</button>
+    <button class="btn" (click)="setWordtheme('3')">Figures mythiques</button>
+    <button class="btn" (click)="setWordtheme('4')">Clans et Tribus</button>
+    <button class="btn" (click)="setWordtheme('5')">Objets et Artfacts</button>
+    </div>
+
+    <div class="summary-btn"><a [routerLink]="sessiongame" class="nav-link text-white"
+        [routerLinkActive]="'active'">Commencer le Quiz!</a>
+    </div>
