@@ -4,25 +4,20 @@
 
   <div class="summary">
     <div class="language"></div>
-    <div class="summary-btn"><a
-      [routerLink]="sessiongame"
-      class="nav-link text-white"
-      [routerLinkActive]="'active'">
-      <i class="fa fa-users"></i>Jeu Gerdarzh</a></div>
-    <div class="summary-btn"><a
-      [routerLink]="wordstems"
-      class="nav-link text-white"
-      [routerLinkActive]="'active'">Lexique</a></div>
-    <div class="summary-btn"><a
-      [routerLink]="sources"
-      class="nav-link text-white"
-      [routerLinkActive]="'active'">Sources</a></div>
-    <div class="summary-btn"><a href="/userprofile">Mon profile</a></div>
-    <div class="summary-btn"><a href="/leaderboard">Classement</a></div>
-    <div class="summary-btn">
-      <a href="/login?logout">
-        <button class="classic-btn">Se déconnecter</button>
-      </a>
-    </div>
+    <div class="summary-btn"><a [routerLink]="sessiongame" class="nav-link text-white" 
+      [routerLinkActive]="'active'">Jeu Gerdarzh</a></div>
+    <div class="summary-btn"><a [routerLink]="wordstems" class="nav-link text-white"
+        [routerLinkActive]="'active'">Lexique</a></div>
+    <div class="summary-btn"><a [routerLink]="sources" class="nav-link text-white"
+        [routerLinkActive]="'active'">Sources</a></div>
+    <div class="summary-btn"><a [routerLink]="profil" class="nav-link text-white" 
+      [routerLinkActive]="'active'">Mon profil</a></div>
+      <div class="summary-btn"><a [routerLink]="leaderboard" class="nav-link text-white" 
+        [routerLinkActive]="'active'">Classement</a></div>
+        <div class="navbar-nav">
+          <div class="nav-item text-nowrap">
+            <a class="nav-link px-3" (click)="logout()"><button class="classic-btn">Se déconnecter</button></a>
+          </div>
+      </div>
   </div>
 </header>
